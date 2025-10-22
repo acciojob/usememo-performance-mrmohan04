@@ -18,8 +18,8 @@ const generateTasks = () => {
 const filterTasks = (tasks, tab) => {
   // Artificially slow down rendering to demonstrate useMemo benefit
   const startTime = performance.now();
-  while (performance.now() - startTime < 200) {
-    // Simulate slow computation
+  while (performance.now() - startTime < 500) {
+    // Simulate slow computation - 500ms delay
   }
 
   if (tab === 'active') {
